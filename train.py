@@ -18,7 +18,7 @@ class Config(object):
 
     n_time_interval = 40
     max_time = 120
-    time_unit = 3600
+    time_unit = 3600  # 3600 for Meme；1 for Weibo and Twitter
 
     l2_weight = 5e-5
     dropout = 0.8
