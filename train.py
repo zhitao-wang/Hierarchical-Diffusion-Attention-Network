@@ -13,7 +13,7 @@ class Config(object):
     test_batch_size = 32
     embedding_size = 32
     hidden_size = 64
-    num_epochs = 150
+    num_epochs = 200
     max_length = 30
 
     n_time_interval = 40
@@ -22,7 +22,7 @@ class Config(object):
 
     l2_weight = 5e-5
     dropout = 0.8
-    patience = 3
+    patience = 5
     freq = 5
     gpu_no = '0'
     model_name = 'hidan'
