@@ -1,5 +1,8 @@
 # Hierarchical-Diffusion-Attention-Network
-Code for "Hierarchical Diffusion Attention Network" (IJCAI 2019)
+This repository provides reference codes of PNRL as described in the paper:
+>**Hierarchical Diffusion Attention Network.**
+>**Zhitao Wang and Wenjie Li.**
+>**IJCAI, 2019.**  (https://www.ijcai.org/Proceedings/2019/531)
 
 ## Environment
 The code is implemented with Tensorflow. Requirments:  
@@ -31,5 +34,20 @@ Check the arguments as:
 ## Data Format
 ### Cascades:
 >u1_id,u2_id,...,ul_id:u1_time,u2_time,...,ul_time   
->Example: 334,478,398,222:75.117015,77.968750,78.757250,80.020426     
+>Example: 334,478,398,222:75.117015,77.968750,78.757250,80.020426
+
+## Citing
+    @inproceedings{ijcai2019-531,
+      title     = {Hierarchical Diffusion Attention Network},
+      author    = {Wang, Zhitao and Li, Wenjie},
+      booktitle = {Proceedings of the Twenty-Eighth International Joint Conference on
+                   Artificial Intelligence, {IJCAI-19}},
+      publisher = {International Joint Conferences on Artificial Intelligence Organization},             
+      pages     = {3828--3834},
+      year      = {2019},
+      month     = {7},
+      doi       = {10.24963/ijcai.2019/531},
+      url       = {https://doi.org/10.24963/ijcai.2019/531},
+    }
+
    
