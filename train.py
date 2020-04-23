@@ -26,7 +26,7 @@ class Config(object):
     freq = 5
     gpu_no = '0'
     model_name = 'hidan'
-    data_name = '../data/meme'
+    data_name = 'data/meme'
     learning_rate = 0.001
     optimizer = 'adam'
     random_seed = 1402
