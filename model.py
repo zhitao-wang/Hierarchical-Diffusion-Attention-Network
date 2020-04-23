@@ -33,10 +33,10 @@ def user2user(cas_emb, cas_mask, hidden_size, keep_prob):
 
         matching_logit = tf.matmul(head, tf.transpose(tail,perm=[0,2,1])) + (1-attention_mask) * (-1e30)
         attention_score = tf.nn.softmax(matching_logit, -1) * attention_mask
-        compare_result = tf.matmul(attention_score, cas_hidden)         # [b,n,d]
+        depend_emb = tf.matmul(attention_score, cas_hidden)         # [b,n,d]
 
-        fusion_gate = dense(tf.concat([cas_hidden, compare_result], 2), hidden_size, tf.sigmoid, keep_prob, 'fusion_gate')  # [b,n,d]
-        return (fusion_gate*cas_hidden + (1-fusion_gate)*compare_result) * cas_mask   # [b,n,d]
+        fusion_gate = dense(tf.concat([cas_hidden, depend_emb], 2), hidden_size, tf.sigmoid, keep_prob, 'fusion_gate')  # [b,n,d]
+        return (fusion_gate*cas_hidden + (1-fusion_gate)*depend_emb) * cas_mask   # [b,n,d]
 
 def user2cas(cas_encoding, cas_mask, time_weight, hidden_size, keep_prob):
     with tf.variable_scope('user2cas'):
