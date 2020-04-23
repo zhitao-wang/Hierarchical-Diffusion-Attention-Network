@@ -18,7 +18,7 @@ Defalut:
     
 Or run with optional arguments:  
 
-    python train.py -d data/hc-exp -l 0.001 -x 32 -e 64 -b 32 -n 200 -f 5
+    python train.py -d data/meme -l 0.001 -x 32 -e 64 -b 32 -t 1
 Check the arguments as:  
 
     python train.py -h
@@ -28,8 +28,9 @@ Check the arguments as:
     -d, --data (data path)  
     -g, --gpu (gpu id)  
     -b, --bs (batch size)  
-    -f, --freq (validation frequency)  
-    -n, --nepoch (number of training epochs)
+    -t, --tu (time unit)  
+
+You can also change values of training parameters in "Class Config()" in "train.py"
 
 ## Data Format
 ### Cascades:
