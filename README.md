@@ -1,5 +1,5 @@
 # Hierarchical-Diffusion-Attention-Network
-This repository provides reference codes of PNRL as described in the paper:
+This repository provides reference codes as described in the paper:
 >**Hierarchical Diffusion Attention Network.**
 >**Zhitao Wang and Wenjie Li.**
 >**IJCAI, 2019.**  (https://www.ijcai.org/Proceedings/2019/531)
